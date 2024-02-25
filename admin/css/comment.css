@@ -1,0 +1,54 @@
+
+
+/***** комментарии *****/
+
+
+
+
+.block_comment_title { margin-top:30px; padding:0 10px; font-size:25px; color:#555555; border-bottom:2px solid #555555;}
+
+/***** блок комментировать *****/
+.bl_comm_1 { margin:30px 0 30px 0; }
+.comm_bord_html { border:1px solid #ccc; }
+.comm_html { width:auto; margin:5px; min-height:18px; overflow:hidden;  color:#666666; background:#fff; font-size:14px; }
+
+.comm_bord_name { float:right; display:none; width:350px; margin:5px 10px 5px 0; border:1px solid #ccc; }
+[contenteditable="true"].add_comm_name br {display:none;}
+.add_comm_name { width:auto; margin:5px; height:18px;  color:#666666; background:#fff; font-size:14px; }
+
+.but_comm { float:right; display:none; width:130px; margin:5px 0; font-size:14px; text-align:center; padding:6px 0; color:#fff; background:#3873bf;}
+.but_comm:hover {cursor:pointer; background:#eba434;}
+/***** блок комментировать *****/
+
+
+/***** комменты *****/
+.comm_text_1, .comm_text_2   { position:relative; margin:10px 0 10px 0; padding:4px 10px; font-size:13px; box-shadow:0px 0px 2px #afafaf; border:1px solid #ababab; }
+.comm_text_2  { margin:10px 0 10px 50px; }
+
+.comm_t_name { display:inline-block; font-size:13px; color:#000; }
+.comm_t_answer { display:inline-block; margin:2px 0 0 5px; font-size:11px; color:#666666; }
+.comm_t_date { display:inline-block; margin:2px 0 0 20px; font-size:11px; color:#666666; }
+.comm_t_cont { margin:10px 0; }
+
+.comm_ans { display:inline-block; font-size:11px; color:#666666; cursor:pointer; }
+/***** комменты *****/
+
+
+/***** блок подкомментирии *****/
+.bl_comm_2 { display:none; margin:15px 0 10px 0; }
+.bl_comm_3 { display:none; margin:15px 0 10px 50px; }    /* класс подключается через jquery */
+.comm_html_2 { width:auto; margin:5px; min-height:18px; overflow:hidden;  color:#666666; background:#fff; font-size:14px; }
+
+.comm_bord_name_2 { float:right; width:350px; margin:5px 10px 5px 0; border:1px solid #ccc; }
+
+.but_comm_2 { float:right; width:130px; margin:5px 0; font-size:14px; text-align:center; padding:6px 0; color:#fff; background:#3873bf;}
+.but_comm_2:hover {cursor:pointer; background:#eba434;}
+/***** блок подкомментирии *****/
+
+
+.comm_delet { position:absolute; top:10px; right:10px; width:10px; height:10px; z-index:10; cursor:pointer; background:url(../img/close.png) no-repeat; }
+.comm_delet:hover { background:url(../img/close.png) no-repeat; background-position: 0 -10px; }
+
+.comm_links_p { display:inline-block; margin:2px 0 0 50px; font-size:11px; color:#666666; }
+.comm_links_p:hover { color:#ea7f29; text-decoration:underline; }
+

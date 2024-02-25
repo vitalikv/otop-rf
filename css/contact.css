@@ -1,0 +1,32 @@
+
+
+
+
+
+.mess_zag { margin-top:0; font-size:13px; color:#222; }
+.mess_inp { width:100%; height:20px; overflow:hidden; margin:5px auto 0 auto; color:#666666; font-size:14px; padding:2px; border: 1px solid #ccc; }
+[contenteditable="true"].mess_inp br {display:none;}
+.mess_text {width:100%; min-height:200px; overflow:hidden; margin:5px auto 0 auto; color:#666666; font-size:14px; padding:2px; border: 1px solid #ccc;}
+
+.erro  { width:250px; margin:10px auto; text-align:center; font-size:14px; color:#ff0000; }
+.infor { display:none; max-width:450px; margin:100px auto; padding:40px 20px; text-align:center; font-size:24px; color:#222; border:1px solid #e6e4e4; box-shadow:1px 1px 3px #ddd; }
+
+.butt_enter { width:150px; margin:30px auto; padding:8px 0; text-align:center; font-size:14px; color:#fff; background:#2861c9; cursor:pointer;}
+.butt_enter:hover { background:#ea7f29; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

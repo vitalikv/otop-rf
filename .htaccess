@@ -1,0 +1,27 @@
+
+
+AddDefaultCharset utf-8
+DirectoryIndex views/page.php
+Options -Indexes
+
+
+RewriteEngine On
+
+
+RewriteRule ^gl/foundation_1$ gl/index.php
+RewriteRule ^calculator/warm_floor$ gl/index.php
+RewriteRule ^redactor/heating$ gl2/index.php
+RewriteRule ^active_1\/.*$ gl/components/activeUser.php
+RewriteRule ^active_2\/.*$ gl2/components/activeUser.php
+
+RewriteRule ^reset_pass_1\/.*$ gl/components/resetPass_2.php
+RewriteRule ^reset_pass_2\/.*$ gl2/components/resetPass_2.php
+
+RewriteRule ^gl/import/(.*)$ gl/import/$1
+RewriteRule ^gl2/panel/(.*)$ gl2/panel/$1
+
+RewriteRule ^redactor/view$ gl3/index.php
+
+
+RewriteRule ^upr[A-Za-z0-9-_/]*$ admin/views/page.php
+RewriteRule ^[A-Za-z0-9-_\/]+$ views/page.php

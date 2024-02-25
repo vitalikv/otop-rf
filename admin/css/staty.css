@@ -1,0 +1,76 @@
+
+
+.gr_razd { font-size:22px; padding:30px 0 10px 0; text-align:center; color:#575757; font-weight:bold; border-bottom:5px solid #ccc;}
+.gr_1, .gr_2 { margin-top:20px; font-size:13px; color:#222; }
+.gr_2 { display:inline-block; padding-top:4px; }
+.st_input, .st_input_2, .st_input_3 { width:100%; min-height:18px; overflow:hidden; margin:5px 0 0 0; color:#666666; font-size:14px; padding:2px; border: 1px solid #ccc; }
+.st_input_3 { display:inline-block; width:500px; }
+[contenteditable="true"].st_input br {display:none;}
+.select_quest { display:inline-block; height:26px; margin:5px 0 0 0; color:#666666; font-size:16px; border: 1px solid #ccc; }
+.img_prev { display:inline-block; margin:10px 0 0 35px; font-size:13px; color:#222; }
+.img_prev img{ width:100px; height:26px; border:1px solid #e6e4e4; }
+.img_prev img:hover{ width:100%; height:100%; }
+
+
+.gr_butt { display:inline-block; margin:20px 0 0 20px; } 
+.butt { display:inline-block; box-shadow:1px 1px 3px #ccc; margin:0px 2px 5px 2px; cursor:pointer; }
+.butt:hover {background:#e5e5e5;}
+
+.st_html { display:none; width:100%; min-height:200px; overflow:hidden; margin:5px auto 0 auto; font-size:13px; color:#222; padding:2px; border: 1px solid #222; }
+.st_text { width:100%; min-height:200px; overflow:hidden; margin:5px auto 0 auto; font-size:14px; color:#666666; padding:2px; border: 1px solid #ccc; }
+.st_text h2 { font-size:16px; padding:7px 0; font-weight:bold; color:#2861c9; }
+.st_text h3 { font-size:14px; padding:7px 0; font-weight:bold; color:#2861c9; }
+.st_text img{ display:block; margin:10px auto; background-size:contain; max-width:500px; box-shadow:0px 0px 3px #ddd; padding:4px; background:#fff; border:1px solid #e6e4e4;}
+
+.st_text ul { padding-left:20px; list-style-type:square; }
+.st_text ul li { padding:8px; font-style:normal; font-size:13px; }
+
+.st_text ol { margin:10px 0; padding-left:25px; list-style-type:decimal; background:#f4f4f4; border-left:4px solid #ccc; }
+.st_text ol li { padding:8px; font-style:normal; font-size:13px; }
+
+.st_text .sp_1 { display:block; margin:10px; padding:20px; font-size:14px; border:1px solid #999; }
+.st_text .sp_2 { display:block; min-height:20px; margin:10px; padding:20px; font-size:14px; border:1px solid #999; }
+.st_text .sp_3 { display:block; min-height:20px; margin:10px; padding:20px; font-size:13px; background:#e7f7ff; border-left:4px solid #1f27c4; }
+.st_text .sp_4 { display:block; margin:10px auto; max-width:500px; padding:4px; font-size:13px; text-align:center; color:#666666; background:#fff; border:1px solid #e6e4e4; box-shadow:0px 0px 3px #ddd; }
+
+.st_text .sp_4 img { margin:0; padding:0; box-shadow:none; border:none; }
+
+.fr_youtube { max-width:640px; height:360px; margin:10px auto; }
+.v_youtube { max-width:640px; height:360px; margin:0px auto; padding:4px; background:#e9e9e9; box-shadow:0px 0px 2px #afafaf; border:1px solid #ababab; }
+
+
+.butt_save { width:150px; margin:30px auto; padding:8px 0; text-align:center; font-size:14px; color:#fff; background:#2861c9; cursor:pointer;}
+.butt_save:hover { background:#ea7f29; }
+
+
+
+.erro  { width:250px; margin:10px auto; text-align:center; font-size:14px; color:#ff0000; }
+.infor { width:450px; margin:10px auto; text-align:center; font-size:14px; color:#222; }
+.infor  a { text-decoration:underline; font-size:14px; color:#2861c9; }
+
+
+
+/**** фиксированное меню ****/
+
+.fix_gr_butt { position:relative; position:fixed; left:0; top:0; width:100%; z-index:10; background:#fff; border-bottom:2px solid #555555; }
+.gr_butt_1 { width:900px; margin:10px auto; }
+
+.pnl_yuotube { display:none; position:relative; position:fixed; left:0; bottom:0; width:100%; z-index:10; background:#fff; border-top:2px solid #555555; }
+.pnl_yuotube_1 { width:1000px; margin:0 auto; }
+.kod_html { float:left; width:800px; height:40px; margin:10px 0; font-size:12px; border:1px solid #2861c9; }
+.butt_html { float:right; width:150px; margin:15px 0; padding:8px 0; text-align:center; font-size:14px; color:#fff; background:#2861c9; cursor:pointer; }
+.butt_html:hover { background:#ea7f29; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
