@@ -49,22 +49,6 @@ $('html, body').animate({ scrollTop: dest - 70 }, 1100);
 <? // содержание и якоря ?>
 
 
-<? // ocsg ?>
-window.onload = function() {
-var dest = $('[ocsg]').offset().top-250;
-var h = $('[ocsg]').height();
-var dest2 = $('[stop_line]').offset().top;
-var n_ocsg = dest2 - dest - h - 160;
-var line = dest2 - h - 210;
-$(window).scroll(function() {
-var pos = $(document).scrollTop();
-if (pos > dest & pos < line) { $('[ocsg]').stop().animate({marginTop: pos - dest + 50}, 0); }
-else if (pos < dest) { $('[ocsg]').stop().animate({marginTop: 50}, 0); }
-else { $('[ocsg]').stop().animate({marginTop: n_ocsg}, 0); }
-});
-};
-<? // ocsg ?>
-
 		
 });
 </script>
@@ -184,12 +168,6 @@ $link = $r->fetchAll(PDO::FETCH_ASSOC);
 <? // ссылки ?>
 
 
-<? if(1==2){ ?>
-<a href="http://engineering-plan.ru" ocsg="" class="ocsg" target="_blank">
-<img src="/img/engineering/1.png" class="engin_img_1">
-<div class="engin_b1">Конструктор отопления из полипропилена</div>
-</a>
-<? } ?>
 
 
 </div>
