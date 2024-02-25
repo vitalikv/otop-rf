@@ -80,27 +80,17 @@ $cont['content'] = preg_replace('|<div class="v_youtube">(.*)</iframe></div>|iU'
 
 
 
-<? if(1==2){ ?>
-<a href="http://engineering-plan.ru" ocsg="" class="ocsg" target="_blank">
-<img src="/img/engineering/1.png" class="engin_img_1">
-<div class="engin_b1">Конструктор отопления из полипропилена</div>
-</a>
-
+<? // warm_floor ---- ?>
 <div class="right_b_1">
-<div class="right_b_1t">3D</div>
+	<a href="/calculator/warm_floor" class="ind_links">
+		<div class="right_b_1t">Программа<br>теплый пол</div>
 
-<div class="schem_ln">
-<img src="/img/staty/prev/pl_odnotrub_level1_kotel1.jpg">
-<a href="/3d/pl_odnotrub_level1_kotel1" class="ind_links">3D схема однотрубной системы отопления из полипропилена одноэтажного дома</a>
+		<div class="schem_ln">
+			<img src="/img/staty/prev/10.jpg">
+		</div>
+	</a>
 </div>
-
-<div class="schem_ln">
-<img src="/img/staty/prev/20150920121206.jpg">
-<a href="/3d/pl_2level_6x9" class="ind_links">3D схема отопления из полипропилена 2-х этажного дома 6x9</a>
-</div>
-
-</div>
-<? } ?>
+<? // warm_floor ---- ?>
 
 
 <? // eng-plan ?>
@@ -110,7 +100,7 @@ $cont['content'] = preg_replace('|<div class="v_youtube">(.*)</iframe></div>|iU'
 
 		<div class="schem_ln">
 			<img src="/img/staty/prev/eng-plan.jpg">
-			<div class="ind_links">Проектирование дома</div>
+			<div class="ind_links" style="text-align: center;">Проектирование дома</div>
 		</div>
 	</a>
 </div>

@@ -111,29 +111,17 @@ $cont['content'] = preg_replace("|<h(\d)>(.*)</h(\d)>|iU","<h\$1 link_t='\$2'>\$
 <div class="v_opis_3">
 
 
-<? // 3D ---- ?>
+<? // warm_floor ---- ?>
 <div class="right_b_1">
-<div class="right_b_1t">3D</div>
+	<a href="/calculator/warm_floor" class="ind_links">
+		<div class="right_b_1t">Программа<br>теплый пол</div>
 
-<div class="schem_ln">
-<img src="/img/staty/prev/10.jpg">
-<a href="/calculator/warm_floor" class="ind_links">Бесплатная программа теплый пол</a>
+		<div class="schem_ln">
+			<img src="/img/staty/prev/10.jpg">
+		</div>
+	</a>
 </div>
-
-<? if(1==2){ ?>
-<div class="schem_ln">
-<img src="/img/staty/prev/pl_odnotrub_level1_kotel1.jpg">
-<a href="/3d/pl_odnotrub_level1_kotel1" class="ind_links">3D схема однотрубной системы отопления из полипропилена одноэтажного дома</a>
-</div>
-
-<div class="schem_ln">
-<img src="/img/staty/prev/20150920121206.jpg">
-<a href="/3d/pl_2level_6x9" class="ind_links">3D схема отопления из полипропилена 2-х этажного дома 6x9</a>
-</div>
-<? } ?>
-
-</div>
-<? // 3D ---- ?>
+<? // warm_floor ---- ?>
 
 
 <? // eng-plan ?>
@@ -143,7 +131,7 @@ $cont['content'] = preg_replace("|<h(\d)>(.*)</h(\d)>|iU","<h\$1 link_t='\$2'>\$
 
 		<div class="schem_ln">
 			<img src="/img/staty/prev/eng-plan.jpg">
-			<div class="ind_links">Проектирование дома</div>
+			<div class="ind_links" style="text-align: center;">Проектирование дома</div>
 		</div>
 	</a>
 </div>
