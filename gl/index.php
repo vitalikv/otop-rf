@@ -1,5 +1,5 @@
 <? require_once("include/bd.php");  ?>
-<?php $vrs = '=12' ?>
+<?php $vrs = '=14' ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,14 +27,14 @@
 	
 			
 	
-    <script src="<?=$path?>js/three.min.js?<?=$vrs?>"></script>
+    <script src="<?=$path?>js/three.min.js"></script>
     <script src="<?=$path?>js/jquery.js"></script>
     <script src="<?=$path?>js/ThreeCSG.js"></script>       
 	<script src="<?=$path?>js/OBJLoader.js"></script>
 	<script src="<?=$path?>js/MTLLoader.js"></script>   
 	
-	<script src="<?=$path?>js/loader/inflate.min.js?<?=$vrs?>"></script>
-	<script src="<?=$path?>js/loader/FBXLoader.js?<?=$vrs?>"></script>
+	<script src="<?=$path?>js/loader/inflate.min.js"></script>
+	<script src="<?=$path?>js/loader/FBXLoader.js"></script>
 	
 	
 	<? require_once("include/top_1.php"); ?>
@@ -57,7 +57,7 @@
 	</noindex>
 	
 	
-	<script src="<?=$path?>tw5.js"></script>	
+	<script src="<?=$path?>tw5.js?<?=$vrs?>"></script>	
 
 </body>
 
