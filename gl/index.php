@@ -1,5 +1,5 @@
 <? require_once("include/bd.php");  ?>
-<?php $vrs = '=24' ?>
+<?php $vrs = '=25' ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +41,7 @@
 	
 	<noindex>		 
 	<? require_once("include/left_panel_1.php"); ?>	
-	<? require_once("include/right_panel_1.php"); ?>
+	<div class="right_panel_1" style="z-index: 1;"></div>
 	<? require_once("include/bottom_panel_1.php"); ?>	
 	<? require_once("include/modal_window_1.php"); ?>
 	<? require_once("include/modal_window_3.php"); ?>
