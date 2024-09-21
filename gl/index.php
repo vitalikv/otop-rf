@@ -1,5 +1,5 @@
 <? require_once("include/bd.php");  ?>
-<?php $vrs = '=25' ?>
+<?php $vrs = '=26' ?>
 
 <!DOCTYPE html>
 <html lang="en">
