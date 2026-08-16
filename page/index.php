@@ -526,6 +526,18 @@
 
 <div class="right_b2">
 
+<? // skeleton-wf ---- ?>
+<div class="right_b_1">
+	<a href="/calculator/auto_wf" class="ind_links">
+		<div class="right_b_1t">Автопостроение<br>теплого пола</div>
+
+		<div class="schem_ln">
+			<img src="/img/staty/prev/10.jpg">
+		</div>
+	</a>
+</div>
+<? // skeleton-wf ---- ?>
+
 <? // warm_floor ---- ?>
 <div class="right_b_1">
 	<a href="/calculator/warm_floor" class="ind_links">

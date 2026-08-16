@@ -10,6 +10,7 @@ RewriteEngine On
 
 RewriteRule ^gl/foundation_1$ gl/index.php
 RewriteRule ^calculator/warm_floor$ gl/index.php
+RewriteRule ^calculator/auto_wf/?$ auto_wf/index.php [L]
 RewriteRule ^redactor/heating$ gl2/index.php
 RewriteRule ^active_1\/.*$ gl/components/activeUser.php
 RewriteRule ^active_2\/.*$ gl2/components/activeUser.php
