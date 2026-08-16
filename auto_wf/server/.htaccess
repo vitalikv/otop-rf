@@ -1,0 +1,39 @@
+RewriteEngine On
+
+# Маршруты API идут без расширения — контракт один и в dev через прокси Vite,
+# и в сборке, где клиент ходит на /server/api/auth/...
+RewriteRule ^api/auth/register$ api/auth/register.php [L,QSA]
+RewriteRule ^api/auth/login$ api/auth/login.php [L,QSA]
+RewriteRule ^api/auth/logout$ api/auth/logout.php [L,QSA]
+RewriteRule ^api/auth/me$ api/auth/me.php [L,QSA]
+RewriteRule ^api/auth/verify-email$ api/auth/verify-email.php [L,QSA]
+RewriteRule ^api/auth/resend-verification$ api/auth/resend-verification.php [L,QSA]
+RewriteRule ^api/auth/forgot-password$ api/auth/forgot-password.php [L,QSA]
+RewriteRule ^api/auth/reset-password-check$ api/auth/reset-password-check.php [L,QSA]
+RewriteRule ^api/auth/reset-password$ api/auth/reset-password.php [L,QSA]
+
+# Проекты пользователя: одна ручка — один файл, как и в авторизации.
+RewriteRule ^api/projects/list$    api/projects/list.php    [L,QSA]
+RewriteRule ^api/projects/get$     api/projects/get.php     [L,QSA]
+RewriteRule ^api/projects/save$    api/projects/save.php    [L,QSA]
+RewriteRule ^api/projects/preview$ api/projects/preview.php [L,QSA]
+RewriteRule ^api/projects/rename$  api/projects/rename.php  [L,QSA]
+RewriteRule ^api/projects/delete$  api/projects/delete.php  [L,QSA]
+
+# Библиотеки, миграции, счётчики лимита и спрятанный чанк приложения по сети не
+# отдаются: снаружи нужны только ручки из api/.
+RewriteRule ^(lib|migrations|storage|private)/ - [F]
+
+# Настройки лежат не в подпапке, а рядом с этим файлом, поэтому закрываются
+# отдельно. Запрошенный напрямую config.local.php сейчас отдал бы пустоту (он
+# только возвращает массив), но в нём пароль базы: стоит PHP перестать
+# обрабатывать файл — и содержимое уедет в ответ как есть.
+<FilesMatch "^config.*\.php$">
+  Require all denied
+</FilesMatch>
+
+# Проект в две мегабайты ужимается до сотни килобайт. Модуль есть не везде,
+# поэтому правило под проверкой: без неё Apache упал бы на старте.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/json
+</IfModule>

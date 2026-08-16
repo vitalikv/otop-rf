@@ -10,7 +10,7 @@ RewriteEngine On
 
 RewriteRule ^gl/foundation_1$ gl/index.php
 RewriteRule ^calculator/warm_floor$ gl/index.php
-RewriteRule ^calculator/auto_wf/?$ auto_wf/index.php [L]
+RewriteRule ^calculator/auto_wf/?$ auto_wf/index.html [L]
 RewriteRule ^redactor/heating$ gl2/index.php
 RewriteRule ^active_1\/.*$ gl/components/activeUser.php
 RewriteRule ^active_2\/.*$ gl2/components/activeUser.php
@@ -25,4 +25,11 @@ RewriteRule ^redactor/view$ gl3/index.php
 
 
 RewriteRule ^upr[A-Za-z0-9-_/]*$ admin/views/page.php
+
+# Каталог auto_wf маршрутизирует себя сам (auto_wf/.htaccess). Без этой строки
+# правило ниже перехватывает его адреса без расширения — в первую очередь ручки
+# вида /auto_wf/server/api/auth/login, — и вместо JSON приложение получает
+# страницу сайта со статусом 200.
+RewriteRule ^auto_wf(/.*)?$ - [L]
+
 RewriteRule ^[A-Za-z0-9-_\/]+$ views/page.php
