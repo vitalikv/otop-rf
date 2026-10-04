@@ -10,13 +10,13 @@
 <? } ?>
 
 
-<? // блок с видео  ?>
+<? if(1==2){ ?>
 <div class="left_b">
 <div class="slid_r">
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kFdMB4p7gbU" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
-
+<? } ?>
 
 <? if(1==2){ ?>
 <div class="right_b">
@@ -32,16 +32,7 @@
 <? } ?>
 
 
-<div class="right_b">
-<div class="right_b_1" style="height: 340px;">
-	<div class="right_b_1t">Программа отопление</div>
-	<a href="/redactor/heating" class="ind_links">
-		<img src="/img/prg-ot-1.jpg" style="display: block; background-size: contain; width: 95%; margin: 65px auto 35px auto;">
-		
-		<div style="margin-bottom: 20px; padding: 10px 0; font-size: 22px; color: #4685BF; text-align: center; font-weight: bold;">Старт</div>
-	</a>
-</div>
-</div>
+
 
 
 <div class="clear"></div>
@@ -526,18 +517,6 @@
 
 <div class="right_b2">
 
-<? // skeleton-wf ---- ?>
-<div class="right_b_1">
-	<a href="/calculator/auto_wf" class="ind_links">
-		<div class="right_b_1t">Автопостроение<br>теплого пола</div>
-
-		<div class="schem_ln">
-			<img src="/img/staty/prev/10.jpg">
-		</div>
-	</a>
-</div>
-<? // skeleton-wf ---- ?>
-
 <? // warm_floor ---- ?>
 <div class="right_b_1">
 	<a href="/calculator/warm_floor" class="ind_links">
@@ -550,7 +529,29 @@
 </div>
 <? // warm_floor ---- ?>
 
+<? // otop ?>
+<div class="right_b_1">
+	<a href="/redactor/heating" class="ind_links">
+		<div class="right_b_1t">Программа отопление</div>
 
+		<div class="schem_ln">
+			<img src="/img/prg-ot-1.jpg">
+		</div>
+	</a>
+</div>
+<? // otop ?>
+
+<? // skeleton-wf ---- ?>
+<div class="right_b_1">
+	<a href="https://ingplan.ru/app/warm-floor" class="ind_links" target="_blank">
+		<div class="right_b_1t">Автопостроение<br>теплого пола</div>
+
+		<div class="schem_ln">
+			<img src="/img/staty/prev/auto-wf.jpg">
+		</div>
+	</a>
+</div>
+<? // skeleton-wf ---- ?>
 
 <? // eng-plan ?>
 <div class="right_b_1">
@@ -559,7 +560,6 @@
 
 		<div class="schem_ln">
 			<img src="/img/staty/prev/eng-plan.jpg">
-			<div class="ind_links" style="text-align: center;">Проектирование дома</div>
 		</div>
 	</a>
 </div>
